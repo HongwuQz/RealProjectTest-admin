@@ -38,7 +38,7 @@
 
 <script>
 import { getTestList } from '@/api/RealProjectTest'
-import ListLayout from '@/components/ListLayout/index.vue'
+import ListLayout from '@/components/ListLayout'
 import LbTable from '@/components/lb-table/lb-table.vue'
 import searchMixin from './mixins/searchMixin'
 export default {
