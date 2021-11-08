@@ -2,7 +2,7 @@ const Mock = require('mockjs')
 
 const userList = [
   {
-    nick: 'Hongwu233',
+    nick: 'Hongwu254',
     phone: 13949159737,
     name: Mock.mock('@cname'),
     subject: 'FrontDevelop',
@@ -11,7 +11,7 @@ const userList = [
     updateTime: '2021-11-4'
   },
   {
-    nick: 'Hongwu233',
+    nick: 'Hongwu254',
     phone: 13949159737,
     name: Mock.mock('@cname'),
     subject: 'FrontDevelop',
@@ -38,7 +38,7 @@ const userList = [
     updateTime: '2021-11-4'
   },
   {
-    nick: 'Hongwu254',
+    nick: 'Hongwu233',
     phone: 13949159737,
     name: Mock.mock('@cname'),
     subject: 'BehindDevelop',

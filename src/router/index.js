@@ -194,9 +194,9 @@ export const asyncRoutes = [
       {
         path: 'list',
         component: () => import('@/views/RealProjectTest-list'),
-        name: 'RolePermission',
+        name: 'List',
         meta: {
-          title: 'Role Permission',
+          title: 'List',
           roles: ['editor']
         }
       }
