@@ -30,7 +30,12 @@
           :column="formData.column"
           :data="formData.data"
           :pagination="true"
-        />
+        >
+          <div v-if="formData.data.length" class="listFooter">
+            显示第 1 到第 {{ formData.data.length }} 条记录，总共 {{ formData.data.length }} 条记录
+          </div>
+        </lb-table>
+
       </template>
     </list-layout>
   </div>
@@ -146,6 +151,16 @@ export default {
     display: flex;
   }
 }
+
+.listFooter{
+  background-color: #F5F7FA ;
+  border-top: 1px #ddd solid;
+  border-bottom: 1px #ddd solid;
+  padding: 15px 0 15px 10px;
+  color: #666;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
   a{
     color: rgb(17, 86, 189);
   }

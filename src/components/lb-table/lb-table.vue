@@ -24,6 +24,9 @@
         :column="item"
       />
     </el-table>
+    <slot>
+      表尾测试
+    </slot>
     <el-pagination
       v-if="pagination"
       class="lb-table-pagination"

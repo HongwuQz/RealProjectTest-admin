@@ -54,7 +54,6 @@
             v-if="checkPermission(['editor'])"
           </el-tag>
         </el-tab-pane>
-
         <el-tab-pane v-if="checkPermission(['admin','editor'])" label="Admin-OR-Editor">
           Both admin or editor can see this
           <el-tag class="permission-sourceCode" type="info">
