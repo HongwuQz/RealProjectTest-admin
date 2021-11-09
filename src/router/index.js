@@ -165,7 +165,7 @@ export const asyncRoutes = [
         name: 'RolePermission',
         meta: {
           title: 'Role Permission',
-          roles: ['admin']
+          roles: ['editor']
         }
       }
     ]
@@ -183,8 +183,17 @@ export const asyncRoutes = [
     },
     children: [
       {
+        path: 'changeRole',
+        component: () => import('@/views/RealProjectTest/changeRole'),
+        name: 'changeRole',
+        meta: {
+          title: 'Change Role',
+          roles: ['admin', 'editor'] // or you can only set roles in sub nav
+        }
+      },
+      {
         path: 'form',
-        component: () => import('@/views/RealProjectTest-form'),
+        component: () => import('@/views/RealProjectTest/RealProjectTest-form'),
         name: 'Form',
         meta: {
           title: 'Form',
@@ -193,7 +202,7 @@ export const asyncRoutes = [
       },
       {
         path: 'list',
-        component: () => import('@/views/RealProjectTest-list'),
+        component: () => import('@/views/RealProjectTest/RealProjectTest-list'),
         name: 'List',
         meta: {
           title: 'List',
