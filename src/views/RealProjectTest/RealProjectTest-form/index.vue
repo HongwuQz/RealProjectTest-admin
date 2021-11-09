@@ -95,7 +95,7 @@ export default {
   },
   created() {
     getFormSeletion().then((result) => {
-      console.log(result)
+      // console.log(result)
       if (result.code === 20000) this.selections = result.data.items.selection
     }).catch((err) => console.log(err))
   },
